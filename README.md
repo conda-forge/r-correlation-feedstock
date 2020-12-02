@@ -5,11 +5,9 @@ Home: https://easystats.github.io/correlation/
 
 Package license: GPL-3
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-correlation-feedstock/blob/master/LICENSE.txt)
 
 Summary: Lightweight package for computing different kinds of correlations, such as partial correlations, Bayesian correlations, multilevel correlations, polychoric correlations, biweight correlations, distance correlations and more. Relies on the easystats ecosystem (Lüdecke, Waggoner & Makowski (2019) <doi:10.21105/joss.01412>).
-
-
 
 Current build status
 ====================
