@@ -1,4 +1,4 @@
-{% set version = "0.6.0" %}
+{% set version = "0.6.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/correlation_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/correlation/correlation_{{ version }}.tar.gz
-  sha256: 78dd6db24effc74886f0c84b6170c29b3a8c0b5e2fb7b02505bbb001d87b41ab
+  sha256: 7d6cc0363396ad291199e4ade4866bafad7ef39666f51cbeb41b197aafc351d1
 
 build:
   merge_build_host: true  # [win]
@@ -25,16 +25,16 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
-    - r-bayestestr >=0.5.0
-    - r-effectsize >=0.2.0
-    - r-insight >=0.8.0
-    - r-parameters >=0.5.0
+    - r-bayestestr >=0.9.0
+    - r-effectsize >=0.4.4
+    - r-insight >=0.13.2
+    - r-parameters >=0.12.0
   run:
     - r-base
-    - r-bayestestr >=0.5.0
-    - r-effectsize >=0.2.0
-    - r-insight >=0.8.0
-    - r-parameters >=0.5.0
+    - r-bayestestr >=0.9.0
+    - r-effectsize >=0.4.4
+    - r-insight >=0.13.2
+    - r-parameters >=0.12.0
 
 test:
   commands:
@@ -43,7 +43,7 @@ test:
 
 about:
   home: https://easystats.github.io/correlation/
-  license: GPL-3
+  license: GPL-3.0-only
   summary: Lightweight package for computing different kinds of correlations, such as partial correlations, Bayesian correlations, multilevel correlations, polychoric correlations, biweight correlations, distance correlations and more. Relies on the easystats ecosystem (Lüdecke, Waggoner & Makowski (2019) <doi:10.21105/joss.01412>).
   license_family: GPL3
   license_file:
