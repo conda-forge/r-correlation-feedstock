@@ -1,4 +1,4 @@
-{% set version = "0.6.0" %}
+{% set version = "0.6.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/correlation_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/correlation/correlation_{{ version }}.tar.gz
-  sha256: 78dd6db24effc74886f0c84b6170c29b3a8c0b5e2fb7b02505bbb001d87b41ab
+  sha256: 7d6cc0363396ad291199e4ade4866bafad7ef39666f51cbeb41b197aafc351d1
 
 build:
   merge_build_host: true  # [win]
